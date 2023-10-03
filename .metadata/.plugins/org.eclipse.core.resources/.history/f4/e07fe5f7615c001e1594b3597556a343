@@ -1,0 +1,10 @@
+package com.infinite.beans;
+
+public class MainExample {
+
+	public MainExample() {
+		AbstractApplicationContext context=
+						new ClassPathXmlApplicationContext("capbeans.xml");
+		Customer customer=(Customer)context.getBean("cust");
+	}
+}

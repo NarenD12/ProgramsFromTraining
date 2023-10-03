@@ -1,0 +1,17 @@
+package com.infinite.spring2task;
+
+public class ConstructorInjection {
+	private String firstName;
+	private String lastName;
+	ConstructorInjection()
+	{
+		
+	}
+	ConstructorInjection(String firstName, String lastName)
+	{
+		first=firstName;
+		last=lastName;
+		
+	}
+
+}

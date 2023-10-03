@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<pre>
+<center>
+Insert into Database
+ <form action="ConnToDB" method="post"> 
+IDnumber <input type="number" name="idno"/> 
+        	<br/> 
+Username <input type="text" name="username"/> 
+        	<br/>
+Address  <input type="text" name="address"/>
+        	<br/><br/> 
+         <input type="submit"/> 
+    </form>
+    <hr>
+    Delete From Database Using ID
+    <form action="DeleteFromDB" method="post"> 
+IDnumber <input type="number" name="idno"/> 
+  
+        <input type="submit"/> 
+    </form>  
+    <hr>
+    Update into Database 
+    
+ <form action="UpdateDB" method="get">  
+IDnumber:   <input type="number" name="idno"/> 
+        	<br/>
+Username: 	<input type="text" name="username"/> 
+        	<br/>
+Address :   <input type="text" name="address"/>
+        	
+        	<input type="submit"/> 
+    </form>
+    </center>
+    </pre>
+</body>
+</html>

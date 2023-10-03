@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>net.training.springmvc</groupId>
+  <artifactId>springmvc-hibernate-xmlconfig</artifactId>
+  <versioning>
+    <versions>
+      <version>0.0.1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20230712083813</lastUpdated>
+  </versioning>
+</metadata>

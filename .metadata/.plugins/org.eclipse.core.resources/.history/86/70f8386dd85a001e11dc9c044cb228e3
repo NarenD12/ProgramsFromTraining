@@ -1,0 +1,83 @@
+package com.infinite.account;
+
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class Deposit
+ */
+public class Deposit extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public Deposit() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		Connection conn=null;
+		int newbal=0;
+		int amount=Integer.valueOf(request.getParameter("amount"));
+		int id=Integer.valueOf(request.getParameter("idno"));
+		try{
+			conn=ConnectionToDB.initializeConn();
+			PreparedStatement ps=conn.prepareStatement("select * from account where idno=?");
+//			ps.setInt(1,newbal);
+			ps.setInt(1,id);
+			ResultSet rs=ps.executeQuery();
+			
+//			ps.executeUpdate();
+//			conn.prepareStatement("Select * from account");
+			if(rs.next()==true){
+				System.out.println("Yes ");
+				int Balance=rs.getInt(3);
+				newbal=Balance + amount;
+				conn.prepareStatement("update account set Balance= ? where idno= ?");
+				ps.setInt(1, newbal);
+				ps.setInt(2, id);
+				ps.executeUpdate();
+				response.sendRedirect("SuccessDeposit.html");
+			}
+			else{
+				response.sendRedirect("FailureDeposit.html");
+			}
+		}
+		catch(SQLException e){
+			System.out.println(e);
+		}
+		catch(Exception e1){
+			System.out.println(e1);
+		}
+		finally{
+			try{
+			conn.close();
+			}
+			catch(Exception e){
+				System.out.println(e);
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<pre>
+<center>
+<form action="CreateAccount" method="post">
+Enter Name<input type="text" name="name" placeholder="Enter your Name">
+Enter Address<input type="text" name="address" placeholder="Enter your Address">
+Enter Phone Number<input type="text" name="phno" placeholder="Enter your PhNo">
+<input type="submit">
+</form>
+</center>
+</pre>
+</body>
+</html>

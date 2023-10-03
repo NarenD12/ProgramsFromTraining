@@ -1,0 +1,16 @@
+127.0.0.1 - - [26/Sep/2023:10:26:44 +0530] "GET / HTTP/1.1" 404 751
+127.0.0.1 - - [26/Sep/2023:10:26:47 +0530] "GET /ServletExample/Welcome HTTP/1.1" 200 -
+127.0.0.1 - - [26/Sep/2023:10:26:47 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+127.0.0.1 - - [26/Sep/2023:19:48:19 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [26/Sep/2023:19:48:20 +0530] "GET /Wallet/ HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [26/Sep/2023:19:48:20 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+127.0.0.1 - - [26/Sep/2023:19:50:34 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [26/Sep/2023:19:50:35 +0530] "GET /Wallet/walletFront.html HTTP/1.1" 200 737
+0:0:0:0:0:0:0:1 - - [26/Sep/2023:19:50:35 +0530] "GET /Wallet/images/wallet.jpg HTTP/1.1" 404 783
+0:0:0:0:0:0:0:1 - - [26/Sep/2023:19:53:46 +0530] "GET /Wallet/walletFront.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [26/Sep/2023:19:53:46 +0530] "GET /Wallet/images/wallet.jpg HTTP/1.1" 200 6376
+0:0:0:0:0:0:0:1 - - [26/Sep/2023:19:53:51 +0530] "GET /Wallet/Combine.jsp? HTTP/1.1" 200 666
+0:0:0:0:0:0:0:1 - - [26/Sep/2023:19:53:51 +0530] "GET /ServletExample/WebContent/form.css HTTP/1.1" 404 793
+0:0:0:0:0:0:0:1 - - [26/Sep/2023:19:53:53 +0530] "POST /Wallet/Login.html HTTP/1.1" 404 772
+0:0:0:0:0:0:0:1 - - [26/Sep/2023:19:59:58 +0530] "GET /Wallet/walletFront.html HTTP/1.1" 200 737
+0:0:0:0:0:0:0:1 - - [26/Sep/2023:19:59:58 +0530] "GET /Wallet/images/wallet.jpg HTTP/1.1" 304 -

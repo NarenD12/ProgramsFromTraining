@@ -1,0 +1,39 @@
+
+Sep 14, 2023 15:30:56.45 NEW SESSION
+Sep 14, 2023 15:30:56.45 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Sep 14, 2023 18:08:50.07 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Sep 14, 2023 18:09:34.55 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+Sep 15, 2023 11:36:52.99 NEW SESSION
+Sep 15, 2023 11:36:52.99 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+Sep 15, 2023 17:33:15.69 NEW SESSION
+Sep 15, 2023 17:33:15.69 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+Sep 19, 2023 09:55:59.92 NEW SESSION
+Sep 19, 2023 09:55:59.92 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+Sep 19, 2023 11:51:32.06 NEW SESSION
+Sep 19, 2023 11:51:32.06 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Sep 19, 2023 12:24:15.92 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Sep 19, 2023 12:26:37.61 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+Sep 20, 2023 21:16:53.54 NEW SESSION
+Sep 20, 2023 21:16:53.54 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+Sep 21, 2023 10:09:31.04 NEW SESSION
+Sep 21, 2023 10:09:31.04 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+Sep 22, 2023 21:20:43.88 NEW SESSION
+Sep 22, 2023 21:20:43.88 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Sep 22, 2023 21:23:46.51 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+Sep 24, 2023 18:03:40.44 NEW SESSION
+Sep 24, 2023 18:03:40.44 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+Sep 24, 2023 18:20:58.89 NEW SESSION
+Sep 24, 2023 18:20:58.89 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Sep 24, 2023 18:39:18.40 [13876:16940:0924/183918.405:ERROR:device_event_log_impl.cc(222)] [18:39:18.406] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+
+Sep 26, 2023 10:26:50.21 NEW SESSION
+Sep 26, 2023 10:26:50.21 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.

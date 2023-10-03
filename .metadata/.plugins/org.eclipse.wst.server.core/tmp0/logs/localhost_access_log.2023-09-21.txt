@@ -1,0 +1,10 @@
+127.0.0.1 - - [21/Sep/2023:10:09:25 +0530] "GET / HTTP/1.1" 404 751
+127.0.0.1 - - [21/Sep/2023:10:09:28 +0530] "GET /ServletExample/Welcome HTTP/1.1" 200 -
+127.0.0.1 - - [21/Sep/2023:10:09:28 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+127.0.0.1 - - [21/Sep/2023:23:15:05 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [21/Sep/2023:23:15:06 +0530] "GET /BankApp/DepositWithdraw.html HTTP/1.1" 200 415
+0:0:0:0:0:0:0:1 - - [21/Sep/2023:23:15:06 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+127.0.0.1 - - [21/Sep/2023:23:20:36 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [21/Sep/2023:23:20:37 +0530] "GET /BankApp/DepositWithdraw.html HTTP/1.1" 200 708
+0:0:0:0:0:0:0:1 - - [21/Sep/2023:23:21:16 +0530] "GET /BankApp/DepositWithdraw.html HTTP/1.1" 200 716
+0:0:0:0:0:0:0:1 - - [21/Sep/2023:23:21:42 +0530] "GET /BankApp/DepositWithdraw.html HTTP/1.1" 200 726

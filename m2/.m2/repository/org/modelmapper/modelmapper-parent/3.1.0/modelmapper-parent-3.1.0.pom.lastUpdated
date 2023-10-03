@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Jul 12 14:20:29 IST 2023
+@default-central-https\://repo.maven.apache.org/maven2/.lastUpdated=1689151829861
+https\://repo.maven.apache.org/maven2/.error=Could not transfer artifact org.modelmapper\:modelmapper-parent\:pom\:3.1.0 from/to central (https\://repo.maven.apache.org/maven2)\: C\:\\Users\\Srinivas\\.m2\\repository\\org\\modelmapper\\modelmapper-parent\\3.1.0\\aether-3599418f-1cd7-4362-bd65-24447f6f6572-modelmapper-parent-3.1.0.pom-in-progress (The system cannot find the file specified)

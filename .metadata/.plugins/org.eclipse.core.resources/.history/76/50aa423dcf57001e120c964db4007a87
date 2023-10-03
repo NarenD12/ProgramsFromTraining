@@ -1,0 +1,74 @@
+package com.infinite.servlet;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.Properties;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class Welcome
+ */
+public class Welcome extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public Welcome() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	@SuppressWarnings("unused")
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		Connection on=null;
+		Properties pr=null;
+		try{
+			InputStream st=getServletContext().getResourceAsStream("mysqldb.properties");
+			pr=new Properties();
+			pr.load(st);
+			Class.forName(pr.getProperty("drivername"));
+			on=DriverManager.getConnection("jdbc:mysql://localhost:3306/training","username","password");
+			PreparedStatement ps=on.prepareStatement("Select * from company");
+			ResultSet rs=ps.executeQuery();
+			while(rs.next()){
+				System.out.print(rs.getString(1)+" ");
+				System.out.print(rs.getString(2)+" ");
+				System.out.println(rs.getString(3)+" ");
+				System.out.println(rs.getInt(4)+" ");
+				System.out.println(rs.getString(5)+" ");
+			}
+			System.out.println("Connection Established....");
+		}
+		catch(Exception e){
+			System.out.println(e);
+		}
+		finally{
+			try{
+				on.close();
+			}
+			catch(Exception e){
+				System.out.println(e);
+			}
+		}
+	}
+}

@@ -1,0 +1,9 @@
+package com.infinite.beans;
+
+public class MainExample {
+
+	public MainExample() {
+		// TODO Auto-generated constructor stub
+		
+	}
+}

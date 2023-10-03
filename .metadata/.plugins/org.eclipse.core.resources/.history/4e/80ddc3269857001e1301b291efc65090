@@ -1,0 +1,18 @@
+package com.infinite.jdbc;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+
+public class TestSecurity {
+	private static final Logger logger=Logger.getLogger(TestSecurity.class);
+		protected static void initializeDB(){
+		
+
+		final String secretKey = "bcd1243$";
+		String originalString = "narennaren";
+		String encryptedString = JavaSecurity.encrypt(originalString, secretKey) ;
+		String decryptedString = JavaSecurity.decrypt(encryptedString, secretKey) ;
+		
+	}
+}
+

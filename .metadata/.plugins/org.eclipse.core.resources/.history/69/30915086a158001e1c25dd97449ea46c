@@ -1,0 +1,27 @@
+package com.infinite.account;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+public class CreateAccount {
+	
+	public static void main(String[] args) {
+		Connection conn=null;
+		PreparedStatement ps=null;
+		try{
+			conn=ConnectionToDB.initializeConn();
+			
+	}
+		}
+		catch{
+			
+		}
+		catch{
+			
+		}
+		finally{
+			
+		}
+	}
+
+}

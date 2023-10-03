@@ -1,0 +1,13 @@
+package com.infinite.beans;
+
+public class MainExample {
+
+	public MainExample() {
+		// TODO Auto-generated constructor stub
+		[17:12] Srinivas (Guest)
+
+		AbstractApplicationContext context=
+
+						new ClassPathXmlApplicationContext("capbeans.xml");
+	}
+}

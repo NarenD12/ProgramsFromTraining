@@ -1,0 +1,10 @@
+package com.infinite.log4jtest;
+
+public class Log4JQuestion {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

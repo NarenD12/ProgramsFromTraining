@@ -1,0 +1,5 @@
+package com.infinite.dbconn;
+
+public class ConnectionToDB {
+
+}

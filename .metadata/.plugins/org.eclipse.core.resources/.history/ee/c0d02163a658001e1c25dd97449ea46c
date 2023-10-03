@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {text-align: center;}
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<pre>
+
+<form action="Deposit" method="post">
+Enter Name<input type="text" name="name" placeholder="Enter your Name">
+Enter Amount<input type="number" name="amount" placeholder="Enter the Amount">
+<input type="submit">
+</form>
+</pre>
+
+
+</body>
+</html>

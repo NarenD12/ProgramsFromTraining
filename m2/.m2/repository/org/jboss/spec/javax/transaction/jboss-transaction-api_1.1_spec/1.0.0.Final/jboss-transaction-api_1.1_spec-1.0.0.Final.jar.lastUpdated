@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Aug 03 11:46:51 IST 2023
+@default-central-https\://repo.maven.apache.org/maven2/.lastUpdated=1691043411481
+https\://repo.maven.apache.org/maven2/.error=Could not transfer artifact org.jboss.spec.javax.transaction\:jboss-transaction-api_1.1_spec\:jar\:1.0.0.Final from/to central (https\://repo.maven.apache.org/maven2)\: The operation was cancelled.

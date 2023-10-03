@@ -1,0 +1,8 @@
+127.0.0.1 - - [17/Sep/2023:19:19:58 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [17/Sep/2023:19:20:00 +0530] "GET /ServletExample/ContextConfigExample HTTP/1.1" 200 70
+0:0:0:0:0:0:0:1 - - [17/Sep/2023:19:20:00 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+127.0.0.1 - - [17/Sep/2023:23:51:28 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [17/Sep/2023:23:51:29 +0530] "GET /RegisterForm/RegisterServlet HTTP/1.1" 405 751
+0:0:0:0:0:0:0:1 - - [17/Sep/2023:23:51:29 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+127.0.0.1 - - [17/Sep/2023:23:58:32 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [17/Sep/2023:23:58:34 +0530] "GET /RegisterForm/TestingConnection HTTP/1.1" 200 -

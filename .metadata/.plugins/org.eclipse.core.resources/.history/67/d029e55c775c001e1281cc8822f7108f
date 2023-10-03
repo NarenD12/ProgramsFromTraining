@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Welcome to Infinite wallet</title>
+</head>
+<marquee> Welcome to Infinite wallet </marquee>
+<body style="background-color: powderblue">
+	<img src="images/wallet.jpg" alt="wallet" width=150px height=150px />
+	<form action="Combine.jsp">
+		<center>
+			<h1>WELCOME TO INFINITE WALLET</h1>
+			<h2>Everything at one place</h2>
+		</center>
+		<center>
+			<input type="submit" value="Get Started Here" />
+			<p>Wallet is an income and expense tracking mobile app that helps
+				you budget, track your spending, and reach your goals. If you are
+				ready to get in control of your finances, this guide will help you
+				get started with Wallet.</p>
+	</form>
+	</center>
+	</p>
+</body>
+</html>

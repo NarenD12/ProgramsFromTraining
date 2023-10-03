@@ -1,0 +1,11 @@
+package com.infinite.spring2task;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class ConstructorTestClass {
+
+	AbstractApplicationContext context=new ClassPathXmlApplicationContext("sample1.xml");
+	
+	
+}
