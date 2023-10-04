@@ -1,0 +1,113 @@
+mysql> insert into infinite1 values('Naren',NULL);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select * from infinite1;
++-------+--------+
+| name  | salary |
++-------+--------+
+| Naren |   NULL |
++-------+--------+
+1 row in set (0.00 sec)
+
+mysql> create table ProjectResourceInfo(empname char(50),ProjectName char(50),empid integer,Desig char(50),DOJ Date);
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> insert into  ProjectResourceInfo('John','Verizon',100,'Developer','2023-09-21');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''John','Verizon',100,'Developer','2023-09-21')' at line 1
+mysql> insert into  ProjectResourceInfo values('John','Verizon',100,'Developer','2023-09-21');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select * from ProjectResourceInfo
+    -> ;
++---------+-------------+-------+-----------+------------+
+| empname | ProjectName | empid | Desig     | DOJ        |
++---------+-------------+-------+-----------+------------+
+| John    | Verizon     |   100 | Developer | 2023-09-21 |
++---------+-------------+-------+-----------+------------+
+1 row in set (0.00 sec)
+
+mysql> create table dtable(cdate date,location char(50) default 'India');
+Query OK, 0 rows affected (0.05 sec)
+
+mysql> insert into dtable(cdat) values(curdate());
+ERROR 1054 (42S22): Unknown column 'cdat' in 'field list'
+mysql> insert into dtable(cdate) values(curdate());
+Query OK, 1 row affected (0.02 sec)
+
+mysql> select * from cdat;
+ERROR 1146 (42S02): Table 'training.cdat' doesn't exist
+mysql> select * from dtable;
++------------+----------+
+| cdate      | location |
++------------+----------+
+| 2023-09-21 | India    |
++------------+----------+
+1 row in set (0.00 sec)
+
+mysql> select * from day(curdate());
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(curdate())' at line 1
+mysql> select day(curdate());
++----------------+
+| day(curdate()) |
++----------------+
+|             21 |
++----------------+
+1 row in set (0.00 sec)
+
+mysql> select month(curdate());
++------------------+
+| month(curdate()) |
++------------------+
+|                9 |
++------------------+
+1 row in set (0.00 sec)
+
+mysql> select dayofyear(curdate());
++----------------------+
+| dayofyear(curdate()) |
++----------------------+
+|                  264 |
++----------------------+
+1 row in set (0.00 sec)
+
+mysql> Decimal check it out in mysql
+    ->
+    -> Decimal check it out in mysql
+    ->
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Decimal check it out in mysql
+
+Decimal check it out in mysql' at line 1
+mysql> select curtime();
++-----------+
+| curtime() |
++-----------+
+| 17:44:46  |
++-----------+
+1 row in set (0.00 sec)
+
+mysql> select &&session.TIME_ZONE;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '&&session.TIME_ZONE' at line 1
+mysql> select @@session.TIME_ZONE;
++---------------------+
+| @@session.TIME_ZONE |
++---------------------+
+| SYSTEM              |
++---------------------+
+1 row in set (0.02 sec)
+
+mysql> select @@Global.time_zone,@@SESSION.time_zone;
++--------------------+---------------------+
+| @@Global.time_zone | @@SESSION.time_zone |
++--------------------+---------------------+
+| SYSTEM             | SYSTEM              |
++--------------------+---------------------+
+1 row in set (0.00 sec)
+
+mysql> select @@SYSTEM_time_zone;
++---------------------+
+| @@SYSTEM_time_zone  |
++---------------------+
+| India Standard Time |
++---------------------+
+1 row in set (0.00 sec)
