@@ -1,0 +1,71 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+	<context:annotation-config />
+
+	<bean id="collectiontest" class="com.infinite.collections.CollectionBean">
+		<property name="cname" value="infinite"></property>
+		<property name="ls">
+			<list>
+				<value>Naren</value>
+				<value>Dandamudi</value>
+				<value>Pradeep</value>
+				<value>Rosik</value>
+				<value>mlkchawan</value>
+			</list>
+		</property>
+	</bean>
+	<bean id="settest" class="com.infinite.collections.SetBean">
+		<property name="st">
+			<set>
+				<value>Naren</value>
+				<value>Dandamudi</value>
+				<value>Pradeep</value>
+				<value>Pradeep</value>
+				<value>Pradeep</value>
+			</set>
+		</property>
+	</bean>
+	<bean id="mapexample" class="com.infinite.collections.MapBean">
+		<property name="mp">
+			<map>
+				<entry key="1001" value="Naren"></entry>
+				<entry key="1002" value="Dandamudi"></entry>
+				<entry key="1003" value="Pradeep"></entry>
+				<entry key="1004" value="Parth"></entry>
+			</map>
+		</property>
+	</bean>
+	<bean id="mapexamplecons" class="com.infinite.collconst.MapConstBean">
+		<constructor-arg name="t">
+			<map>
+				<entry key="0" value="Naren"></entry>
+				<entry key="1" value="Dandamudi"></entry>
+				<entry key="2" value="Pradeep"></entry>
+				<entry key="3" value="Parth"></entry>
+			</map>
+		</constructor-arg>
+	</bean>
+	<bean id="listconst" class="com.infinite.collconst.ListConstBean">
+		<constructor-arg name="t">
+			<list>
+				<value>Naren</value>
+				<value>Dandamudi</value>
+				<value>Pradeep</value>
+				<value>Rosik</value>
+				<value>mlkchawan</value>
+			</list>
+		</constructor-arg>
+	</bean>
+	<bean id="setconst" class="com.infinite.collconst.SetConstBean">
+		<constructor-arg name="t">
+			<set>
+				<value>Naren</value>
+				<value>Dandamudi</value>
+				<value>John</value>
+				<value>John</value>
+				<value>John</value>
+			</set>
+		</constructor-arg>
+	</bean>
+</beans>
