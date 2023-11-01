@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>JavaScript Program</title>
+<script>
+function display(){
+document.write("Hi JavaScript");
+}
+function display2(){
+alert("Hi JavaScript");
+}
+function add(){
+var a=90;
+var b=100;
+document.write(a+b);
+}
+function array(){
+c=["Naren",12345,"Dan"]
+c.push("John");
+document.write(c.reverse());
+document.write("<br>");
+
+document.write(c.indexOf("Naren"));
+document.write("<br>");
+
+document.write(c.filter((word)=> word.length>4));
+document.write("<br>");
+
+d=["Tom","Luke",121];
+document.write(c.concat(d));
+document.write("<br>");
+
+document.write(c.slice(0,2));
+document.write("<br>");
+
+d.splice(1,0,"Blake");
+document.write(d);
+}
+</script>
+</head>
+<body>
+<button type="button" name="Click" onclick="display()">Click</button> 
+<button type="button" name="Click" onclick="display2()">Click Alert</button>
+<button type="button" name="Click" onclick="array()">Array</button> 
+</body>
+</html>
