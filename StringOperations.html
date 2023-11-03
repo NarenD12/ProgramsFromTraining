@@ -1,0 +1,51 @@
+<html>
+<body>
+<script>
+//UpperCase
+var a="InFiniTE ComPuter SolutIONS";
+document.write("To UpperCase:  "+ a.toUpperCase());
+//LowerCase
+document.write("<br> To LowerCase:  "+ a.toLowerCase());
+
+//Trim
+var a="!      Hello World      !";
+document.write("<br> After Trim:  "+ a.trim());  // We also have trimEnd and trimStart
+
+//charAt
+var a="InFiniTE ComPuter SolutIONS";
+document.write("<br> To charAt:  "+ a.charAt(9));
+
+//Concat
+var a="Hello";
+var b="World";
+document.write("<br> Concat: "+a.concat(b));
+
+//endswith
+var a="Infinite computer solutions"
+document.write("<br> Endswith : "+ a.endsWith('solutions'));
+//indexof
+document.write("<br> IndexOf: "+ a.indexOf("computer"));
+
+//Match
+var a="Hello Everyone";
+document.write("<br> Match: "+a.match(/[A-Z]/g));  //here g is there to indicate a global search i.e., the whole string.
+//Replace
+document.write("<br> Replace: "+ a.replace("Hello","Hey"));
+//Search
+document.write("<br> Search: "+a.search("E"));
+
+//Json.parse
+const json = '{"result":true, "count":42}';
+const obj = JSON.parse(json);
+document.write("<br> Json.parse Count: "+ obj.count);
+document.write("<br> Json.parse Result: "+ obj.result);
+
+//Date
+const date=new Date("2020-05-12T23:50:21.817Z");
+document.write("<br>"+date.toString());
+document.write("<br>"+date.toDateString());
+document.write("<br>"+date.toTimeString());
+date[Symbol.toPrimitive]("string");
+</script>
+</body>
+</html>
