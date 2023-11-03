@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 40%;
+  padding: 10px;
+  height: 555px;
+  margin:59px;
+  border-radius: 5px;  /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.infi,.infi2{
+  background-color:blue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  border-radius: 5px;
+}
+.inf{
+  background-color:darkblue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  border-radius: 5px;
+}
+.in{
+  background-color:white;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 1px solidblack;
+  cursor: pointer;
+  width: 50%;
+  border-radius: 5px;
+}
+.log{
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 1px solidblack;
+  cursor: pointer;
+  width: 50%;
+  border-radius: 5px;
+}
+.infi{
+	background-color: #ccc;
+	cursor: not-allowed;
+}
+</style>
+</head>
+<body style="background-color:gray;">
+<center>
+<div class="row">
+<div class="column" style="background-color:white;">
+<h2>Login</h2>
+
+<input type="text" id="Email" class="log" placeholder="E-mail" onkeyup="checkInputs()" required><br><br>
+<input type="password" id="password" class="log" placeholder="password" onkeyup="checkInputs()" required><br><br>
+<center>
+<a href="#" target="_blank">Forgot password?</a><br><br>
+<button type="submit" id="buttonlog" class="infi" disabled="disabled">Login</button><br><br>
+  Don't have an account?
+<a href="#" target="_blank">Signup</a><br><br>
+  ---------------Or------------------<br>
+<a href="https://www.infinite.com/" target="_blank"><button type="button" class="inf">Login with Infinite</button></a><br>
+<a href="https://www.google.com/" target="_blank"><button type="button" class="in">Login with Google</button></a><br>
+<script>
+        function checkInputs() {
+            document.getElementById("buttonlog").disabled = !(document.getElementById("Email").value.trim() && document.getElementById("password").value.trim());
+        }
+</script>
+</div>
+<div class="column" style="background-color:white;">
+<h2>Signup</h2>
+<input type="text" name="Email2" class="log" placeholder="E-mail"><br><br>
+<input type="password" name="Create password" class="log" placeholder="Create password"><br><br>
+<input type="password" name="Confirm password" class="log" placeholder="Confirm password"><br><br>
+<center>
+<a href="#" target="_blank">Forgot password?</a><br>
+<button type="button" class="infi2">Signup</button><br>
+  Already have an account?
+<a href="#" target="_blank">Login</a><br>
+  ---------------Or------------------<br>
+<a href="https://www.infinite.com/" target="_blank"><button type="button" class="inf">Signup with Infinite</button></a><br>
+<a href="https://www.google.com/" target="_blank"><button type="button" class="in">Signup with Google</button></a><br>
+</div>
+</center>
+</div>
+</body>
+</html>
+
+
