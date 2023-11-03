@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Promise</title>    
+    </head>
+    <body>
+        <h1>Promise Example</h1><hr>
+        <p id="demo"></p> 
+        <script>
+            function addition(a,b,callsuccess,callfailure){
+               let z=a+b;
+              try{
+                console.log(z);
+                if(z>100){
+                    callsuccess(z);
+                }
+                else{
+                    callfailure();
+                    }
+              }  
+              catch(e){
+                console.log(e);
+              }
+            }
+            function callsuccess(z){
+                document.getElementById("demo").innerHTML=z; 
+            }
+            function callfailure(){
+                document.getElementById("demo").innerHTML='Failed Callback'; 
+            }
+         addition(100,33,callsuccess,callfailure);
+        </script>
+    </body>
+</html>
